@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Comic Neue', cursive;
+}
+
+body {
+  background: linear-gradient( white, #ffedfe, pink);
+  /* Keep the inherited background full size. */
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+.ul {
+  width: 100vw;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  list-style: none;
+  position: fixed;
+}
+.ul a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media (max-width: 754px) {
+  .ul {
+    font-size: 1.5em;
+  }
+}
+
+.box {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 70vh;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+    font-size: 0.9em;
+}
+
+a i {
+    color: black;
+}
+
+.box p{
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffedfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  z-index: 5;
+}
+
+.home-ico {
+  color: white;
+  -webkit-text-stroke: 2.5px black;
+}
+@media (max-width: 1037px) {
+  .box {
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+  }
+}
+@media (max-width: 600px) {
+  #a,#b,#c {
+    display: none;
+    position: absolute;
+  }
+}
+@media (max-width: 400px) {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  ul li a{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: fit-content;
+  }
+}
+i {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+footer img{
+  width: 70px;
+}
+
+*::selection {
+  background-color: pink;
+  color: white;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .wrap-card {
+      display: flex;
+    justify-content: center;
+  }
+  .card img {
+      width: 70%;
+      height:40%;
+  }
+
+  @media (max-width: 1050px) {
+      .wrap-card {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+  footer p a {
+      font-size: 1em;
+      text-decoration: underline;
+  }
